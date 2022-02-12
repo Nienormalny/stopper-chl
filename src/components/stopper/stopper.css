@@ -1,0 +1,48 @@
+#stopper {
+    display: block;
+    margin: auto;
+    width:  100%;
+    max-width: 967px;
+    padding: 1rem;
+    border-radius: 2px;
+    border: 2px solid  var(--main-color);
+}
+#stopper h2 {
+    color: var(--main-color);
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: .5rem;
+    border-bottom: 1px  solid var(--main-color);
+}
+#stopper .time-counter {
+    font-size: 5rem;
+    text-align: center;
+    margin: .5rem 0;
+}
+#stopper ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+#stopper ul > li {
+    margin-right: .5rem;
+}
+#stopper .stopper-options ul {
+    flex-wrap: wrap;
+}
+#stopper .stopper-options ul > li {
+    margin: .5rem auto;
+}
+#stopper .stopper-options ul > li,
+#stopper .stopper-options ul > li > button {
+    width: 100%;
+}
+
+@media screen and (max-width: 798px) {
+    #stopper .time-counter {
+        font-size: 3rem;
+    }
+}
