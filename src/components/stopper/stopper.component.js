@@ -48,7 +48,8 @@ const StopperComponent = () => {
     }
 
     return <section id="stopper">
-        <h2>Stopper {(1000 / options.speed) === 1 ? 'with normal speed' : 'is ' + (1000 / options.speed) + 'x faster'}</h2>
+        {/* Show in title, witch option is selected */}
+        <h2>⏲️ Stopper {(1000 / options.speed) === 1 ? 'with normal speed' : 'is ' + (1000 / options.speed) + 'x faster'}</h2>
         <h3 className="time-counter">{getForrmatedTime()}</h3>
         <ul className="stopper-nav">
             {start && <li><button className={'btn btn-tertiary'} onClick={handleStart}>Start</button></li>}
@@ -57,7 +58,7 @@ const StopperComponent = () => {
         </ul>
         <ul className="stopper-options">
             <li>
-                <h3>Speed options</h3>
+                <h3>⚙️ Speed options</h3>
                 <ul>
                     <li>
                         <button className={classnames('btn btn-tertiary', {active: options.speed === 1000})} onClick={() => setOptions(old => {
