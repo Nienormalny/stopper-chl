@@ -14,3 +14,6 @@
 - pause stopper
 - reset stopper
 - set speed of counting
+
+## Used external dependencys
+- classnames -> for validating classes and make them more dynamic
